@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+  <h2>Welcome {{ user }}</h2>
+  <a href="/logout">Logout</a>
+  <h3>Deploy Your Project</h3>
+  <form action="/deploy" method="post" enctype="multipart/form-data">
+    <textarea name="code" placeholder="Type Python/Flask code here..."></textarea><br>
+    OR Upload Zip: <input type="file" name="file"><br>
+    <button type="submit">Deploy</button>
+  </form>
+</body>
+</html>
